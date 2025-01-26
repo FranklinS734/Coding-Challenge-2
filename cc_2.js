@@ -75,3 +75,21 @@ console.log("Initial customer list:", customers);
 customers.push({ name: "Adam Allen", email: "Non787@gmail.com", purchaseAmount: 550 });
 console.log("Updated customer list:", customers);
 
+// TASK 5: Order Processing System
+// Create an order object with a method to calculate tax.
+
+// Step 1: Declare an object for an order.
+let order = {
+    orderId: 163577,
+    customerName: "Justin G.",
+    amount: 550,
+
+    // Step 2: Add a method to calculate tax (10% tax rate).
+    calculateTax: function() {
+        return this.amount * 0.1;
+    }
+};
+
+// Step 3: Logging the order details and tax amount to the console.
+console.log("Order details:", order);
+console.log("Tax amount:", order.calculateTax().toFixed(2));
