@@ -59,3 +59,18 @@ console.log("After updating department:", employee);
 // Step 3: Add a new property "position" to the object.
 employee.position = "Product Management";
 console.log("Final employee record:", employee);
+
+// TASK 4: Customer Database
+// Manage a customer database with multiple customer records
+
+// Step 1: Declare an array of customer objects.
+let customers = [
+    { name: "Justin Gomez", email: "yeetsd43@gmail.com", purchaseAmount: 30 },
+    { name: "Neil So", email: "SBDaG834@hotmail.com", purchaseAmount: 5000 },
+    { name: "Andy Murph", email: "AMurph0A@gmail.com", purchaseAmount: 400 }
+];
+console.log("Initial customer list:", customers);
+
+// Step 2: Adding a new customer to the array.
+customers.push({ name: "Adam Allen", email: "Non787@gmail.com", purchaseAmount: 550 });
+console.log("Updated customer list:", customers);
