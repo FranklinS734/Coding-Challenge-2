@@ -74,3 +74,4 @@ console.log("Initial customer list:", customers);
 // Step 2: Adding a new customer to the array.
 customers.push({ name: "Adam Allen", email: "Non787@gmail.com", purchaseAmount: 550 });
 console.log("Updated customer list:", customers);
+
