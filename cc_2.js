@@ -30,7 +30,7 @@ let total = scores.reduce((sum, score) => sum + score, 0);
 let average = total / scores.length;
 console.log("Average score:", average.toFixed(2)); // Log average
 
-// OPTIONAL: Convert scores to letter grades (A-F).
+// OPTIONAL (will convert numerical values to show letter grade): Convert scores to letter grades (A-F).
 let grades = scores.map(score => {
     if (score >= 90) return "A";
     else if (score >= 80) return "B";
@@ -39,3 +39,23 @@ let grades = scores.map(score => {
     else return "F";
 });
 console.log("Scores with grades:", scores.map((score, i) => `${score} (${grades[i]})`));
+
+// TASK 3: Employee Records
+// Creating an employee object, modifying it, and log updates to the console.
+
+// Step 1: Declare an object with employee details.
+let employee = {
+    name: "Sunny Man",
+    age: 33,
+    department: "Information Systems",
+    isActive: true
+};
+console.log("Initial employee record:", employee);
+
+// Step 2: Update the department property.
+employee.department = "Software Development";
+console.log("After updating department:", employee);
+
+// Step 3: Add a new property "position" to the object.
+employee.position = "Product Management";
+console.log("Final employee record:", employee);
